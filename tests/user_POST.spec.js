@@ -4,7 +4,7 @@ import { test } from '../fixtures/apiWithAllure'
 
 const exampleUserJson = {
   id: 10,
-  username: 'theUser',
+  username: 'theuser',
   firstName: 'John',
   lastName: 'James',
   email: 'john@email.com',
