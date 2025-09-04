@@ -5,7 +5,7 @@ import { test } from '../fixtures/apiWithAllure'
 test.describe('/store/inventory - GET → JSON', () => {
   test('200 - Successful operation', async ({ request, baseURL }) => {
     const requestPayload = 'No request body for GET';
-    const response = await request.get(`${baseURL}/store/inventory`, {
+    const response = await request.get(`/store/inventory`, {
       headers: {
         'Accept': 'application/json',
         'api_key': 'special-key'
@@ -14,7 +14,7 @@ test.describe('/store/inventory - GET → JSON', () => {
 
     const body = await response.json();
     console.log('Request Payload:', requestPayload);
-    console.log('200 GET→JSON:', body);
+    consle.log('200 GET→JSON:', body);
     expect(response.status()).toBe(200);
     expect(typeof body).toBe('object');
     expect(body).not.toBeNull();
