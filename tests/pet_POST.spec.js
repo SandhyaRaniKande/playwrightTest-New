@@ -1,7 +1,6 @@
 import { expect } from '@playwright/test'
 import { test } from '../fixtures/apiWithAllure'
 
-
 const examplePetJson = {
   id: 10,
   name: 'doggie',
